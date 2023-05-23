@@ -1,8 +1,9 @@
 #pragma once
 class Figure {
 protected:
-	double perimeter;
-	double square;
+	double figure_perimeter;
+	double figure_area;
 public:
-	virtual void show() = 0;
+	virtual void show() {};
+	virtual void show_type() {};
 };

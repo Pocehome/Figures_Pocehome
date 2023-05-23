@@ -8,4 +8,5 @@ public:
 	Point() : Point(0, 0) {}
 
 	void show();
+	void show_type();
 };

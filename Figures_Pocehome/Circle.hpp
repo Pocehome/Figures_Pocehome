@@ -11,4 +11,5 @@ public:
 	Circle(Point p, double radius);
 
 	void show();
+	void show_type();
 };

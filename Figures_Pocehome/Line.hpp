@@ -11,4 +11,5 @@ public:
 	Line(Point p1, Point p2);
 
 	void show();
+	void show_type();
 };

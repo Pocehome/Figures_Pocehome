@@ -9,7 +9,8 @@ private:
 	double width;
 
 public:
-	Rectangle(Point p, double h, double w);
+	Rectangle(Point p, double height, double width);
 
 	void show();
+	void show_type();
 };

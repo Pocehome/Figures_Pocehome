@@ -5,6 +5,7 @@
 #include "Triangle.hpp"
 #include "Rectangle.hpp"
 #include "Square.hpp"
+#include "Image.hpp"
 #include <iostream>
 
 void ShowFigures(Figure* figures[], size_t arr_szie) {
@@ -16,37 +17,42 @@ void ShowFigures(Figure* figures[], size_t arr_szie) {
 }
 
 int main() {
-	Point p1(1, 3);
-	std::cout << "Point:" << std::endl;
-	p1.show();
-	std::cout << std::endl;
+	Point point(1, 3);
+	/*std::cout << "Point:" << std::endl;
+	point.show();
+	std::cout << std::endl;*/
 
-	Line l(Point(1, 4), Point(5, 1));
-	std::cout << "Line:" << std::endl;
-	l.show();
-	std::cout << std::endl;
+	Line line(Point(1, 4), Point(5, 1));
+	/*std::cout << "Line:" << std::endl;
+	line.show();
+	std::cout << std::endl;*/
 
-	Circle c(p1, 5);
-	std::cout << "Circle:" << std::endl;
-	c.show();
-	std::cout << std::endl;
+	Circle circle(point, 5);
+	/*std::cout << "Circle:" << std::endl;
+	circle.show();
+	std::cout << std::endl;*/
 
-	Triangle t(Point(0, 0), Point(0, 3), Point(4, 0));
-	std::cout << "Triangle:" << std::endl;
-	t.show();
-	std::cout << std::endl;
+	Triangle triangle(Point(0, 0), Point(0, 3), Point(4, 0));
+	/*std::cout << "Triangle:" << std::endl;
+	triangle.show();
+	std::cout << std::endl;*/
 
-	Rectangle r(Point(), 3, 5.6);
-	std::cout << "Rectangle:" << std::endl;
-	r.show();
-	std::cout << std::endl;
+	Rectangle rectangle(Point(), 3, 5.6);
+	/*std::cout << "Rectangle:" << std::endl;
+	rectangle.show();
+	std::cout << std::endl;*/
 
-	Square s(Point(-3.44, -10), 5);
-	std::cout << "Square:" << std::endl;
-	s.show();
-	std::cout << std::endl;
+	Square square(Point(-3.44, -10), 5);
+	/*std::cout << "Square:" << std::endl;
+	square.show();
+	std::cout << std::endl;*/
 
-	//Figure* figures[6] = { &p1, &l, &t, &r, &s, &c };
-
-	//ShowFigures(figures, sizeof(figures) / sizeof(Figure*));
+	Image im;
+	im.append(&point);
+	im.append(&line);
+	im.append(&circle);
+	im.append(&triangle);
+	im.append(&rectangle);
+	im.append(&square);
+	im.show();
 }

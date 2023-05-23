@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Image.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point.cpp" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="Circle.hpp" />
     <ClInclude Include="Figure.hpp" />
+    <ClInclude Include="Image.hpp" />
     <ClInclude Include="Line.hpp" />
     <ClInclude Include="Point.hpp" />
     <ClInclude Include="Rectangle.hpp" />

@@ -8,7 +8,8 @@ private:
 	double width;
 
 public:
-	Square(Point p, double w);
+	Square(Point p, double width);
 
 	void show();
+	void show_type();
 };
